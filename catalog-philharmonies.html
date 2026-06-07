@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Филармонии — каталог портала Журавли</title>
+  <meta name="description" content="Государственные и региональные концертные организации России.">
+  <meta property="og:title" content="Филармонии — каталог портала Журавли">
+  <meta property="og:description" content="Государственные и региональные концертные организации России.">
+  <meta property="og:image" content="assets/img/hero-tower-night.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Журавли">
+    <img src="assets/img/logo.png" alt="Журавли">
+    <span><b>Журавли</b><small>Культурный портал</small></span>
+  </a>
+  <nav class="topnav"><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  <button class="search-btn" id="searchOpen" aria-label="Поиск">⌕</button>
+  <button class="burger" id="menuOpen" aria-label="Меню"><span></span><span></span></button>
+</header>
+<aside class="menu-curtains" id="siteMenu" aria-hidden="true">
+  <div class="menu-panel">
+    <button class="menu-close" id="menuClose">Закрыть</button>
+    <p>Культурно-информационный портал</p>
+    <h2>Журавли</h2>
+    <nav><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  </div>
+</aside>
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <button class="menu-close" id="searchClose">Закрыть</button>
+  <div class="search-box">
+    <p>Поиск по каталогу</p>
+    <input id="globalSearch" type="search" placeholder="Введите название коллектива, город или регион">
+    <div id="globalResults"></div>
+  </div>
+</div>
+
+<main>
+
+<section class="hero " style="--hero:url('assets/img/hero-tower-night.png')">
+  <img class="birds-layer" src="assets/img/birds-wide.png" alt="" aria-hidden="true">
+  <div class="hero__shade"></div>
+  <div class="hero__content reveal">
+    <p class="kicker">Каталог</p>
+    <h1>Филармонии</h1>
+    <p class="lead">Государственные и региональные концертные организации России.</p>
+    <div class="hero-actions"><a class="arrow-link" href="catalog.html">Назад в каталог<span>→</span></a></div>
+  </div>
+</section>
+<section class="section catalog-page">
+  <div class="filter-panel reveal">
+    <label>Поиск в разделе</label>
+    <input id="catalogFilter" type="search" placeholder="Название, город или регион">
+    <span>64 записей</span>
+  </div>
+  <div class="collective-grid" id="collectiveGrid">
+<a class="collective-card reveal" href="collectives/moskovskaya-gosudarstvennaya-akademicheskaya-filarmoniya-001.html" data-title="московская государственная академическая филармония" data-city="москва" data-region="москва">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Московская государственная академическая филармония</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/sankt-peterburgskaya-gosudarstvennaya-akademicheskaya-filarmoniya-imeni-d-d-shostakovicha-002.html" data-title="санкт-петербургская государственная академическая филармония имени д. д. шостаковича" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Санкт-Петербургская государственная академическая филармония имени Д. Д. Шостаковича</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/novosibirskaya-gosudarstvennaya-filarmoniya-003.html" data-title="новосибирская государственная филармония" data-city="новосибирск" data-region="новосибирская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Новосибирская государственная филармония</h3>
+  <p>Новосибирск · Новосибирская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/sverdlovskaya-gosudarstvennaya-akademicheskaya-filarmoniya-004.html" data-title="свердловская государственная академическая филармония" data-city="екатеринбург" data-region="свердловская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Свердловская государственная академическая филармония</h3>
+  <p>Екатеринбург · Свердловская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/permskaya-kraevaya-filarmoniya-005.html" data-title="пермская краевая филармония" data-city="пермь" data-region="пермский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Пермская краевая филармония</h3>
+  <p>Пермь · Пермский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/rostovskaya-gosudarstvennaya-filarmoniya-006.html" data-title="ростовская государственная филармония" data-city="ростов-на-дону" data-region="ростовская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Ростовская государственная филармония</h3>
+  <p>Ростов-на-Дону · Ростовская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nizhegorodskaya-gosudarstvennaya-akademicheskaya-filarmoniya-imeni-m-l-rostropovicha-007.html" data-title="нижегородская государственная академическая филармония имени м. л. ростроповича" data-city="нижний новгород" data-region="нижегородская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Нижегородская государственная академическая филармония имени М. Л. Ростроповича</h3>
+  <p>Нижний Новгород · Нижегородская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/krasnoyarskaya-kraevaya-filarmoniya-008.html" data-title="красноярская краевая филармония" data-city="красноярск" data-region="красноярский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Красноярская краевая филармония</h3>
+  <p>Красноярск · Красноярский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/samarskaya-gosudarstvennaya-filarmoniya-009.html" data-title="самарская государственная филармония" data-city="самара" data-region="самарская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Самарская государственная филармония</h3>
+  <p>Самара · Самарская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/saratovskaya-oblastnaya-filarmoniya-imeni-a-g-shnitke-010.html" data-title="саратовская областная филармония имени а. г. шнитке" data-city="саратов" data-region="саратовская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Саратовская областная филармония имени А. Г. Шнитке</h3>
+  <p>Саратов · Саратовская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/astrahanskaya-gosudarstvennaya-filarmoniya-011.html" data-title="астраханская государственная филармония" data-city="астрахань" data-region="астраханская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Астраханская государственная филармония</h3>
+  <p>Астрахань · Астраханская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/bashkirskaya-gosudarstvennaya-filarmoniya-imeni-husaina-ahmetova-012.html" data-title="башкирская государственная филармония имени хусаина ахметова" data-city="уфа" data-region="республика башкортостан">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Башкирская государственная филармония имени Хусаина Ахметова</h3>
+  <p>Уфа · Республика Башкортостан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/birobidzhanskaya-oblastnaya-filarmoniya-013.html" data-title="биробиджанская областная филармония" data-city="биробиджан" data-region="еврейская автономная область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Биробиджанская областная филармония</h3>
+  <p>Биробиджан · Еврейская автономная область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/voronezhskoe-gosudarstvennoe-gastrolno-koncertnoe-obedinenie-filarmoniya-014.html" data-title="воронежское государственное гастрольно-концертное объединение «филармония»" data-city="воронеж" data-region="воронежская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Воронежское государственное гастрольно-концертное объединение «Филармония»</h3>
+  <p>Воронеж · Воронежская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/vyatskaya-filarmoniya-imeni-p-i-chaykovskogo-015.html" data-title="вятская филармония имени п. и. чайковского" data-city="киров" data-region="кировская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Вятская филармония имени П. И. Чайковского</h3>
+  <p>Киров · Кировская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennaya-filarmoniya-altayskogo-kraya-016.html" data-title="государственная филармония алтайского края" data-city="барнаул" data-region="алтайский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Государственная филармония Алтайского края</h3>
+  <p>Барнаул · Алтайский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennaya-filarmoniya-respubliki-saha-yakutiya-imeni-g-m-krivoshapko-017.html" data-title="государственная филармония республики саха (якутия) имени г. м. кривошапко" data-city="якутск" data-region="республика саха (якутия)">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Государственная филармония Республики Саха (Якутия) имени Г. М. Кривошапко</h3>
+  <p>Якутск · Республика Саха (Якутия)</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/dagestanskaya-gosudarstvennaya-filarmoniya-imeni-t-muradova-018.html" data-title="дагестанская государственная филармония имени т. мурадова" data-city="махачкала" data-region="республика дагестан">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Дагестанская государственная филармония имени Т. Мурадова</h3>
+  <p>Махачкала · Республика Дагестан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/zabaykalskaya-kraevaya-filarmoniya-imeni-o-l-lundstrema-019.html" data-title="забайкальская краевая филармония имени о. л. лундстрема" data-city="чита" data-region="забайкальский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Забайкальская краевая филармония имени О. Л. Лундстрема</h3>
+  <p>Чита · Забайкальский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/ivanovskaya-gosudarstvennaya-filarmoniya-020.html" data-title="ивановская государственная филармония" data-city="иваново" data-region="ивановская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Ивановская государственная филармония</h3>
+  <p>Иваново · Ивановская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kaliningradskaya-oblastnaya-filarmoniya-imeni-e-f-svetlanova-021.html" data-title="калининградская областная филармония имени е. ф. светланова" data-city="калининград" data-region="калининградская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Калининградская областная филармония имени Е. Ф. Светланова</h3>
+  <p>Калининград · Калининградская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/karelskaya-gosudarstvennaya-filarmoniya-022.html" data-title="карельская государственная филармония" data-city="петрозаводск" data-region="республика карелия">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Карельская государственная филармония</h3>
+  <p>Петрозаводск · Республика Карелия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/filarmoniya-kuzbassa-imeni-b-t-shtokolova-023.html" data-title="филармония кузбасса имени б. т. штоколова" data-city="кемерово" data-region="кемеровская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Филармония Кузбасса имени Б. Т. Штоколова</h3>
+  <p>Кемерово · Кемеровская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/krasnodarskaya-filarmoniya-imeni-g-f-ponomarenko-024.html" data-title="краснодарская филармония имени г. ф. пономаренко" data-city="краснодар" data-region="краснодарский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Краснодарская филармония имени Г. Ф. Пономаренко</h3>
+  <p>Краснодар · Краснодарский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kurganskaya-oblastnaya-filarmoniya-025.html" data-title="курганская областная филармония" data-city="курган" data-region="курганская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Курганская областная филармония</h3>
+  <p>Курган · Курганская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kurskaya-gosudarstvennaya-filarmoniya-026.html" data-title="курская государственная филармония" data-city="курск" data-region="курская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Курская государственная филармония</h3>
+  <p>Курск · Курская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kaluzhskaya-oblastnaya-filarmoniya-027.html" data-title="калужская областная филармония" data-city="калуга" data-region="калужская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Калужская областная филармония</h3>
+  <p>Калуга · Калужская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/mariyskaya-gosudarstvennaya-filarmoniya-imeni-yakova-eshpaya-028.html" data-title="марийская государственная филармония имени якова эшпая" data-city="йошкар-ола" data-region="республика марий эл">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Марийская государственная филармония имени Якова Эшпая</h3>
+  <p>Йошкар-Ола · Республика Марий Эл</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/mordovskaya-gosudarstvennaya-filarmoniya-029.html" data-title="мордовская государственная филармония" data-city="саранск" data-region="республика мордовия">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Мордовская государственная филармония</h3>
+  <p>Саранск · Республика Мордовия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/moskovskaya-oblastnaya-filarmoniya-030.html" data-title="московская областная филармония" data-city="москва / красногорск" data-region="московская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Московская областная филармония</h3>
+  <p>Москва / Красногорск · Московская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/novgorodskaya-oblastnaya-filarmoniya-imeni-a-s-arenskogo-031.html" data-title="новгородская областная филармония имени а. с. аренского" data-city="великий новгород" data-region="новгородская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Новгородская областная филармония имени А. С. Аренского</h3>
+  <p>Великий Новгород · Новгородская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/penzenskaya-gosudarstvennaya-filarmoniya-032.html" data-title="пензенская государственная филармония" data-city="пенза" data-region="пензенская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Пензенская государственная филармония</h3>
+  <p>Пенза · Пензенская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/pomorskaya-gosudarstvennaya-filarmoniya-033.html" data-title="поморская государственная филармония" data-city="архангельск" data-region="архангельская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Поморская государственная филармония</h3>
+  <p>Архангельск · Архангельская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/severo-kavkazskaya-gosudarstvennaya-akademicheskaya-filarmoniya-imeni-v-i-safonova-034.html" data-title="северо-кавказская государственная академическая филармония имени в. и. сафонова" data-city="кисловодск" data-region="ставропольский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Северо-Кавказская государственная академическая филармония имени В. И. Сафонова</h3>
+  <p>Кисловодск · Ставропольский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennaya-filarmoniya-respubliki-severnaya-osetiya-alaniya-035.html" data-title="государственная филармония республики северная осетия — алания" data-city="владикавказ" data-region="республика северная осетия — алания">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Государственная филармония Республики Северная Осетия — Алания</h3>
+  <p>Владикавказ · Республика Северная Осетия — Алания</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/smolenskaya-oblastnaya-filarmoniya-036.html" data-title="смоленская областная филармония" data-city="смоленск" data-region="смоленская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Смоленская областная филармония</h3>
+  <p>Смоленск · Смоленская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tatarskaya-gosudarstvennaya-filarmoniya-imeni-gabdully-tukaya-037.html" data-title="татарская государственная филармония имени габдуллы тукая" data-city="казань" data-region="республика татарстан">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Татарская государственная филармония имени Габдуллы Тукая</h3>
+  <p>Казань · Республика Татарстан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tverskaya-akademicheskaya-oblastnaya-filarmoniya-038.html" data-title="тверская академическая областная филармония" data-city="тверь" data-region="тверская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Тверская академическая областная филармония</h3>
+  <p>Тверь · Тверская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tolyattinskaya-filarmoniya-039.html" data-title="тольяттинская филармония" data-city="тольятти" data-region="самарская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Тольяттинская филармония</h3>
+  <p>Тольятти · Самарская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tomskaya-oblastnaya-gosudarstvennaya-filarmoniya-040.html" data-title="томская областная государственная филармония" data-city="томск" data-region="томская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Томская областная государственная филармония</h3>
+  <p>Томск · Томская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tuvinskaya-gosudarstvennaya-filarmoniya-imeni-v-m-halilova-041.html" data-title="тувинская государственная филармония имени в. м. халилова" data-city="кызыл" data-region="республика тыва">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Тувинская государственная филармония имени В. М. Халилова</h3>
+  <p>Кызыл · Республика Тыва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tulskaya-oblastnaya-filarmoniya-imeni-i-a-mihaylovskogo-042.html" data-title="тульская областная филармония имени и. а. михайловского" data-city="тула" data-region="тульская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Тульская областная филармония имени И. А. Михайловского</h3>
+  <p>Тула · Тульская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tyumenskaya-filarmoniya-043.html" data-title="тюменская филармония" data-city="тюмень" data-region="тюменская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Тюменская филармония</h3>
+  <p>Тюмень · Тюменская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/udmurtskaya-gosudarstvennaya-filarmoniya-044.html" data-title="удмуртская государственная филармония" data-city="ижевск" data-region="удмуртская республика">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Удмуртская государственная филармония</h3>
+  <p>Ижевск · Удмуртская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/filarmoniya-dzhazovoy-muzyki-045.html" data-title="филармония джазовой музыки" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Филармония джазовой музыки</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/habarovskaya-kraevaya-filarmoniya-046.html" data-title="хабаровская краевая филармония" data-city="хабаровск" data-region="хабаровский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Хабаровская краевая филармония</h3>
+  <p>Хабаровск · Хабаровский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/chelyabinskaya-gosudarstvennaya-filarmoniya-047.html" data-title="челябинская государственная филармония" data-city="челябинск" data-region="челябинская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Челябинская государственная филармония</h3>
+  <p>Челябинск · Челябинская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/chechenskaya-gosudarstvennaya-filarmoniya-imeni-adnana-shahbulatova-048.html" data-title="чеченская государственная филармония имени аднана шахбулатова" data-city="грозный" data-region="чеченская республика">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Чеченская государственная филармония имени Аднана Шахбулатова</h3>
+  <p>Грозный · Чеченская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/chuvashskaya-gosudarstvennaya-filarmoniya-049.html" data-title="чувашская государственная филармония" data-city="чебоксары" data-region="чувашская республика">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Чувашская государственная филармония</h3>
+  <p>Чебоксары · Чувашская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/yaroslavskaya-gosudarstvennaya-filarmoniya-050.html" data-title="ярославская государственная филармония" data-city="ярославль" data-region="ярославская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Ярославская государственная филармония</h3>
+  <p>Ярославль · Ярославская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/belgorodskaya-gosudarstvennaya-filarmoniya-051.html" data-title="белгородская государственная филармония" data-city="белгород" data-region="белгородская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Белгородская государственная филармония</h3>
+  <p>Белгород · Белгородская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/irkutskaya-oblastnaya-filarmoniya-052.html" data-title="иркутская областная филармония" data-city="иркутск" data-region="иркутская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Иркутская областная филармония</h3>
+  <p>Иркутск · Иркутская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/omskaya-oblastnaya-filarmoniya-053.html" data-title="омская областная филармония" data-city="омск" data-region="омская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Омская областная филармония</h3>
+  <p>Омск · Омская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/vologodskaya-oblastnaya-filarmoniya-054.html" data-title="вологодская областная филармония" data-city="вологда" data-region="вологодская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Вологодская областная филармония</h3>
+  <p>Вологда · Вологодская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tambovskoe-oblastnoe-guk-tambovkoncert-055.html" data-title="тамбовское областное гук «тамбовконцерт»" data-city="тамбов" data-region="тамбовская область">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Тамбовское областное ГУК «Тамбовконцерт»</h3>
+  <p>Тамбов · Тамбовская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kamchatskoe-koncertno-filarmonicheskoe-obedinenie-056.html" data-title="камчатское концертно-филармоническое объединение" data-city="петропавловск-камчатский" data-region="камчатский край">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Камчатское концертно-филармоническое объединение</h3>
+  <p>Петропавловск-Камчатский · Камчатский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/filarmoniya-respubliki-hakasiya-imeni-v-g-chaptykova-057.html" data-title="филармония республики хакасия имени в. г. чаптыкова" data-city="абакан" data-region="республика хакасия">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Филармония Республики Хакасия имени В. Г. Чаптыкова</h3>
+  <p>Абакан · Республика Хакасия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/naberezhnochelninskaya-filarmoniya-058.html" data-title="набережночелнинская филармония" data-city="набережные челны" data-region="республика татарстан">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Набережночелнинская филармония</h3>
+  <p>Набережные Челны · Республика Татарстан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/krymskaya-gosudarstvennaya-filarmoniya-059.html" data-title="крымская государственная филармония" data-city="симферополь" data-region="республика крым">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Крымская государственная филармония</h3>
+  <p>Симферополь · Республика Крым</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/filarmoniya-imeni-a-hamhoeva-060.html" data-title="филармония имени а. хамхоева" data-city="назрань" data-region="республика ингушетия">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Филармония имени А. Хамхоева</h3>
+  <p>Назрань · Республика Ингушетия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kalmyckaya-gosudarstvennaya-filarmoniya-061.html" data-title="калмыцкая государственная филармония" data-city="элиста" data-region="республика калмыкия">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Калмыцкая государственная филармония</h3>
+  <p>Элиста · Республика Калмыкия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/doneckaya-gosudarstvennaya-akademicheskaya-filarmoniya-062.html" data-title="донецкая государственная академическая филармония" data-city="донецк" data-region="донецкая народная республика">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Донецкая государственная академическая филармония</h3>
+  <p>Донецк · Донецкая Народная Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/neftekamskaya-gosudarstvennaya-filarmoniya-063.html" data-title="нефтекамская государственная филармония" data-city="нефтекамск" data-region="республика башкортостан">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Нефтекамская государственная филармония</h3>
+  <p>Нефтекамск · Республика Башкортостан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/sibayskoe-koncertno-teatralnoe-obedinenie-064.html" data-title="сибайское концертно-театральное объединение" data-city="сибай" data-region="республика башкортостан">
+  <img src="assets/img/hero-tower-night.png" alt="">
+  <span>Филармония</span>
+  <h3>Сибайское концертно-театральное объединение</h3>
+  <p>Сибай · Республика Башкортостан</p>
+  <b>Подробнее →</b>
+</a></div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/img/logo.png" alt="">
+    <span>Журавли</span>
+  </div>
+  <p>Культура объединяет. Искусство вдохновляет. Журавли ведут вперёд.</p>
+  <div class="footer-socials">
+    <a href="#">VK</a><a href="#">TG</a><a href="#">YT</a>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@zhuravli-portal.ru">info@zhuravli-portal.ru</a>
+    <a href="contacts.html">Связаться →</a>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

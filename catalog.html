@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог оркестров, филармоний и творческих коллективов — Журавли</title>
+  <meta name="description" content="Каталог портала «Журавли»: оркестры, филармонии, национальные ансамбли, танцевальные коллективы и персоны.">
+  <meta property="og:title" content="Каталог оркестров, филармоний и творческих коллективов — Журавли">
+  <meta property="og:description" content="Каталог портала «Журавли»: оркестры, филармонии, национальные ансамбли, танцевальные коллективы и персоны.">
+  <meta property="og:image" content="assets/img/hero-tower-night.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Журавли">
+    <img src="assets/img/logo.png" alt="Журавли">
+    <span><b>Журавли</b><small>Культурный портал</small></span>
+  </a>
+  <nav class="topnav"><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  <button class="search-btn" id="searchOpen" aria-label="Поиск">⌕</button>
+  <button class="burger" id="menuOpen" aria-label="Меню"><span></span><span></span></button>
+</header>
+<aside class="menu-curtains" id="siteMenu" aria-hidden="true">
+  <div class="menu-panel">
+    <button class="menu-close" id="menuClose">Закрыть</button>
+    <p>Культурно-информационный портал</p>
+    <h2>Журавли</h2>
+    <nav><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  </div>
+</aside>
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <button class="menu-close" id="searchClose">Закрыть</button>
+  <div class="search-box">
+    <p>Поиск по каталогу</p>
+    <input id="globalSearch" type="search" placeholder="Введите название коллектива, город или регион">
+    <div id="globalResults"></div>
+  </div>
+</div>
+
+<main>
+
+<section class="hero hero-tall" style="--hero:url('assets/img/hero-cello-night.png')">
+  <img class="birds-layer" src="assets/img/birds-wide.png" alt="" aria-hidden="true">
+  <div class="hero__shade"></div>
+  <div class="hero__content reveal">
+    <p class="kicker">Каталог</p>
+    <h1>Каталог</h1>
+    <p class="lead">Оркестры, филармонии, танцевальные коллективы и дирижёры.</p>
+    <div class="hero-actions"><a class="arrow-link" href="#sections">Смотреть разделы<span>→</span></a></div>
+  </div>
+</section>
+<section class="catalog-strip" id="sections">
+  <div class="strip-heading reveal"><h2>Разделы каталога</h2><p>Каталог работает по структуре: раздел → карточки коллективов → подробная страница.</p></div>
+  <div class="category-grid category-grid-large">
+<a class="category-card reveal" href="catalog-symphony.html">
+  <img src="assets/img/photo-symphony-top.png" alt="Симфонические оркестры">
+  <div>
+    <span>55</span>
+    <h3>Симфонические оркестры</h3>
+    <p>Академические оркестры России, концертные организации и коллективы симфонической традиции.</p>
+    <b>Смотреть →</b>
+  </div>
+</a>
+
+<a class="category-card reveal" href="catalog-folk.html">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="Оркестры народных инструментов">
+  <div>
+    <span>50</span>
+    <h3>Оркестры народных инструментов</h3>
+    <p>Оркестры русских народных инструментов, домр, балалаек, баянов и гармоник.</p>
+    <b>Смотреть →</b>
+  </div>
+</a>
+
+<a class="category-card reveal" href="catalog-national.html">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="Национальные оркестры">
+  <div>
+    <span>18</span>
+    <h3>Национальные оркестры</h3>
+    <p>Коллективы, представляющие национальные музыкальные традиции регионов России.</p>
+    <b>Смотреть →</b>
+  </div>
+</a>
+
+<a class="category-card reveal" href="catalog-philharmonies.html">
+  <img src="assets/img/hero-tower-night.png" alt="Филармонии">
+  <div>
+    <span>64</span>
+    <h3>Филармонии</h3>
+    <p>Государственные и региональные концертные организации России.</p>
+    <b>Смотреть →</b>
+  </div>
+</a>
+
+<a class="category-card reveal" href="catalog-dance.html">
+  <img src="assets/img/photo-dance-theatre-real.png" alt="Танцевальные коллективы">
+  <div>
+    <span>02</span>
+    <h3>Танцевальные коллективы</h3>
+    <p>Национальные, народные, академические и сценические танцевальные коллективы.</p>
+    <b>Смотреть →</b>
+  </div>
+</a></div>
+</section>
+<section class="section">
+  <div class="section-title reveal"><p>Подборка</p><h2>Рекомендуем обратить внимание</h2></div>
+  <div class="collective-grid">
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-akademicheskiy-simfonicheskiy-orkestr-rossii-im-e-f-svetlanova-001.html"><img src="assets/img/photo-symphony-top.png" alt=""><span>Симфонический оркестр</span><h3>Государственный академический симфонический оркестр России им. Е. Ф. Светланова</h3><p>Москва</p><b>Подробнее →</b></a><a class="collective-card reveal" href="collectives/nacionalnyy-akademicheskiy-orkestr-narodnyh-instrumentov-rossii-imeni-n-p-osipova-001.html"><img src="assets/img/photo-folk-orchestra-red.png" alt=""><span>Оркестр народных инструментов</span><h3>Национальный академический оркестр народных инструментов России имени Н. П. Осипова</h3><p>Москва</p><b>Подробнее →</b></a><a class="collective-card reveal" href="collectives/moskovskaya-gosudarstvennaya-akademicheskaya-filarmoniya-001.html"><img src="assets/img/hero-tower-night.png" alt=""><span>Филармония</span><h3>Московская государственная академическая филармония</h3><p>Москва</p><b>Подробнее →</b></a><a class="collective-card reveal" href="collectives/nacionalnyy-akademicheskiy-orkestr-narodnyh-instrumentov-rossii-imeni-n-p-osipova-001.html"><img src="assets/img/photo-folk-orchestra-red.png" alt=""><span>Национальный оркестр</span><h3>Национальный академический оркестр народных инструментов России имени Н. П. Осипова</h3><p>Москва</p><b>Подробнее →</b></a></div></section>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/img/logo.png" alt="">
+    <span>Журавли</span>
+  </div>
+  <p>Культура объединяет. Искусство вдохновляет. Журавли ведут вперёд.</p>
+  <div class="footer-socials">
+    <a href="#">VK</a><a href="#">TG</a><a href="#">YT</a>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@zhuravli-portal.ru">info@zhuravli-portal.ru</a>
+    <a href="contacts.html">Связаться →</a>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

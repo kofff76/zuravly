@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Оркестры народных инструментов — каталог портала Журавли</title>
+  <meta name="description" content="Оркестры русских народных инструментов, домр, балалаек, баянов и гармоник.">
+  <meta property="og:title" content="Оркестры народных инструментов — каталог портала Журавли">
+  <meta property="og:description" content="Оркестры русских народных инструментов, домр, балалаек, баянов и гармоник.">
+  <meta property="og:image" content="assets/img/hero-tower-night.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Журавли">
+    <img src="assets/img/logo.png" alt="Журавли">
+    <span><b>Журавли</b><small>Культурный портал</small></span>
+  </a>
+  <nav class="topnav"><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  <button class="search-btn" id="searchOpen" aria-label="Поиск">⌕</button>
+  <button class="burger" id="menuOpen" aria-label="Меню"><span></span><span></span></button>
+</header>
+<aside class="menu-curtains" id="siteMenu" aria-hidden="true">
+  <div class="menu-panel">
+    <button class="menu-close" id="menuClose">Закрыть</button>
+    <p>Культурно-информационный портал</p>
+    <h2>Журавли</h2>
+    <nav><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  </div>
+</aside>
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <button class="menu-close" id="searchClose">Закрыть</button>
+  <div class="search-box">
+    <p>Поиск по каталогу</p>
+    <input id="globalSearch" type="search" placeholder="Введите название коллектива, город или регион">
+    <div id="globalResults"></div>
+  </div>
+</div>
+
+<main>
+
+<section class="hero " style="--hero:url('assets/img/photo-folk-orchestra-red.png')">
+  <img class="birds-layer" src="assets/img/birds-wide.png" alt="" aria-hidden="true">
+  <div class="hero__shade"></div>
+  <div class="hero__content reveal">
+    <p class="kicker">Каталог</p>
+    <h1>Оркестры народных инструментов</h1>
+    <p class="lead">Оркестры русских народных инструментов, домр, балалаек, баянов и гармоник.</p>
+    <div class="hero-actions"><a class="arrow-link" href="catalog.html">Назад в каталог<span>→</span></a></div>
+  </div>
+</section>
+<section class="section catalog-page">
+  <div class="filter-panel reveal">
+    <label>Поиск в разделе</label>
+    <input id="catalogFilter" type="search" placeholder="Название, город или регион">
+    <span>50 записей</span>
+  </div>
+  <div class="collective-grid" id="collectiveGrid">
+<a class="collective-card reveal" href="collectives/nacionalnyy-akademicheskiy-orkestr-narodnyh-instrumentov-rossii-imeni-n-p-osipova-001.html" data-title="национальный академический оркестр народных инструментов россии имени н. п. осипова" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Национальный академический оркестр народных инструментов России имени Н. П. Осипова</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/akademicheskiy-orkestr-russkih-narodnyh-instrumentov-imeni-n-n-nekrasova-002.html" data-title="академический оркестр русских народных инструментов имени н. н. некрасова" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Академический оркестр русских народных инструментов имени Н. Н. Некрасова</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-akademicheskiy-russkiy-orkestr-imeni-v-v-andreeva-003.html" data-title="государственный академический русский оркестр имени в. в. андреева" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный академический русский оркестр имени В. В. Андреева</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-metelica-004.html" data-title="оркестр русских народных инструментов «метелица»" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов «Метелица»</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/koncertnyy-orkestr-russkih-narodnyh-instrumentov-perezvony-005.html" data-title="концертный оркестр русских народных инструментов «перезвоны»" data-city="санкт-петербург / пушкин" data-region="санкт-петербург / пушкин">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Концертный оркестр русских народных инструментов «Перезвоны»</h3>
+  <p>Санкт-Петербург / Пушкин · Санкт-Петербург / Пушкин</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-akademicheskiy-russkiy-koncertnyy-orkestr-boyan-006.html" data-title="государственный академический русский концертный оркестр «боян»" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный академический русский концертный оркестр «Боян»</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-onego-karelskoy-gosudarstvennoy-filarmonii-007.html" data-title="оркестр русских народных инструментов «онего» карельской государственной филармонии" data-city="петрозаводск, республика карелия" data-region="петрозаводск, республика карелия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов «Онего» Карельской государственной филармонии</h3>
+  <p>Петрозаводск, Республика Карелия · Петрозаводск, Республика Карелия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-imeni-e-m-trishina-kaluzhskoy-oblastnoy-filarmonii-008.html" data-title="оркестр русских народных инструментов имени е. м. тришина калужской областной филармонии" data-city="калуга" data-region="калуга">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов имени Е. М. Тришина Калужской областной филармонии</h3>
+  <p>Калуга · Калуга</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-permskoy-kraevoy-filarmonii-imeni-b-m-salina-009.html" data-title="оркестр русских народных инструментов пермской краевой филармонии / имени б. м. салина" data-city="пермь" data-region="пермь">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов Пермской краевой филармонии / имени Б. М. Салина</h3>
+  <p>Пермь · Пермь</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-don-rostovskoy-gosudarstvennoy-filarmonii-010.html" data-title="оркестр русских народных инструментов «дон» ростовской государственной филармонии" data-city="ростов-на-дону" data-region="ростов-на-дону">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов «ДОН» Ростовской государственной филармонии</h3>
+  <p>Ростов-на-Дону · Ростов-на-Дону</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-imeni-n-n-kalinina-volgogradskoy-oblastnoy-filarmoni-011.html" data-title="оркестр русских народных инструментов имени н. н. калинина волгоградской областной филармонии" data-city="волгоград" data-region="волгоград">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов имени Н. Н. Калинина Волгоградской областной филармонии</h3>
+  <p>Волгоград · Волгоград</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/russkiy-orkestr-belgorodskoy-gosudarstvennoy-filarmonii-012.html" data-title="русский оркестр белгородской государственной филармонии" data-city="белгород" data-region="белгород">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Русский оркестр Белгородской государственной филармонии</h3>
+  <p>Белгород · Белгород</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-russkiy-narodnyy-orkestr-malahit-chelyabinskoy-gosudarstvennoy-filarmonii-013.html" data-title="государственный русский народный оркестр «малахит» челябинской государственной филармонии" data-city="челябинск" data-region="челябинск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный русский народный оркестр «Малахит» Челябинской государственной филармонии</h3>
+  <p>Челябинск · Челябинск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-narodnyh-instrumentov-respubliki-tatarstan-014.html" data-title="государственный оркестр народных инструментов республики татарстан" data-city="казань, республика татарстан" data-region="казань, республика татарстан">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный оркестр народных инструментов Республики Татарстан</h3>
+  <p>Казань, Республика Татарстан · Казань, Республика Татарстан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-orkestr-narodnyh-instrumentov-respubliki-bashkortostan-015.html" data-title="национальный оркестр народных инструментов республики башкортостан" data-city="уфа, республика башкортостан" data-region="уфа, республика башкортостан">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Национальный оркестр народных инструментов Республики Башкортостан</h3>
+  <p>Уфа, Республика Башкортостан · Уфа, Республика Башкортостан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-narodnyh-instrumentov-mariy-kundem-im-s-elembaeva-016.html" data-title="государственный оркестр народных инструментов «марий кундем» им. с. элембаева" data-city="йошкар-ола, республика марий эл" data-region="йошкар-ола, республика марий эл">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный оркестр народных инструментов «Марий кундем» им. С. Элембаева</h3>
+  <p>Йошкар-Ола, Республика Марий Эл · Йошкар-Ола, Республика Марий Эл</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-narodnyh-instrumentov-zolotaya-melodiya-udmurtskoy-gosudarstvennoy-filarmonii-017.html" data-title="оркестр народных инструментов «золотая мелодия» удмуртской государственной филармонии" data-city="ижевск, удмуртская республика" data-region="ижевск, удмуртская республика">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр народных инструментов «Золотая мелодия» Удмуртской государственной филармонии</h3>
+  <p>Ижевск, Удмуртская Республика · Ижевск, Удмуртская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/yaroslavskiy-orkestr-russkih-narodnyh-instrumentov-struny-rusi-018.html" data-title="ярославский оркестр русских народных инструментов «струны руси»" data-city="ярославль" data-region="ярославль">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Ярославский оркестр русских народных инструментов «Струны Руси»</h3>
+  <p>Ярославль · Ярославль</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-tula-tulskoy-oblastnoy-filarmonii-019.html" data-title="оркестр русских народных инструментов «тула» тульской областной филармонии" data-city="тула" data-region="тула">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов «Тула» Тульской областной филармонии</h3>
+  <p>Тула · Тула</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/krasnoyarskiy-filarmonicheskiy-russkiy-orkestr-imeni-a-yu-bardina-020.html" data-title="красноярский филармонический русский оркестр имени а. ю. бардина" data-city="красноярск" data-region="красноярск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Красноярский филармонический русский оркестр имени А. Ю. Бардина</h3>
+  <p>Красноярск · Красноярск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/russkiy-akademicheskiy-orkestr-novosibirskoy-gosudarstvennoy-filarmonii-021.html" data-title="русский академический оркестр новосибирской государственной филармонии" data-city="новосибирск" data-region="новосибирск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Русский академический оркестр Новосибирской государственной филармонии</h3>
+  <p>Новосибирск · Новосибирск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gubernatorskiy-orkestr-russkih-narodnyh-instrumentov-filarmonii-kuzbassa-022.html" data-title="губернаторский оркестр русских народных инструментов филармонии кузбасса" data-city="кемерово" data-region="кемерово">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Губернаторский оркестр русских народных инструментов Филармонии Кузбасса</h3>
+  <p>Кемерово · Кемерово</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/russkiy-orkestr-habarovskoy-kraevoy-filarmonii-023.html" data-title="русский оркестр хабаровской краевой филармонии" data-city="хабаровск" data-region="хабаровск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Русский оркестр Хабаровской краевой филармонии</h3>
+  <p>Хабаровск · Хабаровск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/russkiy-orkestr-tolyattinskoy-filarmonii-024.html" data-title="русский оркестр тольяттинской филармонии" data-city="тольятти, самарская область" data-region="тольятти, самарская область">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Русский оркестр Тольяттинской филармонии</h3>
+  <p>Тольятти, Самарская область · Тольятти, Самарская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nizhegorodskiy-russkiy-narodnyy-orkestr-im-v-a-kuznecova-025.html" data-title="нижегородский русский народный оркестр им. в. а. кузнецова" data-city="нижний новгород" data-region="нижний новгород">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Нижегородский русский народный оркестр им. В. А. Кузнецова</h3>
+  <p>Нижний Новгород · Нижний Новгород</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/ulyanovskiy-gosudarstvennyy-orkestr-russkih-narodnyh-instrumentov-gubernatorskiy-026.html" data-title="ульяновский государственный оркестр русских народных инструментов «губернаторский»" data-city="ульяновск" data-region="ульяновск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Ульяновский государственный оркестр русских народных инструментов «Губернаторский»</h3>
+  <p>Ульяновск · Ульяновск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-russkih-narodnyh-instrumentov-zolotye-struny-filarmonii-yakutii-027.html" data-title="государственный оркестр русских народных инструментов «золотые струны» филармонии якутии" data-city="якутск, республика саха (якутия)" data-region="якутск, республика саха (якутия)">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный оркестр русских народных инструментов «Золотые струны» Филармонии Якутии</h3>
+  <p>Якутск, Республика Саха (Якутия) · Якутск, Республика Саха (Якутия)</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-narodnyh-instrumentov-respubliki-dagestan-028.html" data-title="государственный оркестр народных инструментов республики дагестан" data-city="махачкала, республика дагестан" data-region="махачкала, республика дагестан">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный оркестр народных инструментов Республики Дагестан</h3>
+  <p>Махачкала, Республика Дагестан · Махачкала, Республика Дагестан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-russkih-narodnyh-instrumentov-russkaya-udal-imeni-a-v-shipitko-029.html" data-title="государственный оркестр русских народных инструментов «русская удаль» имени а. в. шипитько" data-city="майкоп, республика адыгея" data-region="майкоп, республика адыгея">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный оркестр русских народных инструментов «Русская удаль» имени А. В. Шипитько</h3>
+  <p>Майкоп, Республика Адыгея · Майкоп, Республика Адыгея</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-gosudarstvennyy-orkestr-narodnyh-instrumentov-rso-alaniya-imeni-bulata-gazdano-030.html" data-title="национальный государственный оркестр народных инструментов рсо-алания имени булата газданова" data-city="владикавказ, республика северная осетия - алания" data-region="владикавказ, республика северная осетия - алания">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Национальный государственный оркестр народных инструментов РСО-Алания имени Булата Газданова</h3>
+  <p>Владикавказ, Республика Северная Осетия - Алания · Владикавказ, Республика Северная Осетия - Алания</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-chechenskih-narodnyh-instrumentov-chechenskoy-gosudarstvennoy-filarmonii-imeni-a-s-031.html" data-title="оркестр чеченских народных инструментов чеченской государственной филармонии имени а. шахбулатова" data-city="грозный, чеченская республика" data-region="грозный, чеченская республика">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр чеченских народных инструментов Чеченской государственной филармонии имени А. Шахбулатова</h3>
+  <p>Грозный, Чеченская Республика · Грозный, Чеченская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-narodnyh-instrumentov-gosudarstvennoy-filarmonii-imeni-a-hamhoeva-032.html" data-title="оркестр народных инструментов государственной филармонии имени а. хамхоева" data-city="республика ингушетия" data-region="республика ингушетия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр народных инструментов Государственной филармонии имени А. Хамхоева</h3>
+  <p>Республика Ингушетия · Республика Ингушетия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-orkestr-kalmykii-033.html" data-title="национальный оркестр калмыкии" data-city="элиста, республика калмыкия" data-region="элиста, республика калмыкия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Национальный оркестр Калмыкии</h3>
+  <p>Элиста, Республика Калмыкия · Элиста, Республика Калмыкия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-art-folk-orkestr-mordens-mordovskoy-gosudarstvennoy-filarmonii-034.html" data-title="национальный арт-фолк оркестр «морденс» мордовской государственной филармонии" data-city="саранск, республика мордовия" data-region="саранск, республика мордовия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Национальный арт-фолк оркестр «Морденс» Мордовской государственной филармонии</h3>
+  <p>Саранск, Республика Мордовия · Саранск, Республика Мордовия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/altayskiy-gosudarstvennyy-orkestr-russkih-narodnyh-instrumentov-sibir-imeni-e-i-borisova-035.html" data-title="алтайский государственный оркестр русских народных инструментов «сибирь» имени е. и. борисова" data-city="барнаул, алтайский край" data-region="барнаул, алтайский край">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Алтайский государственный оркестр русских народных инструментов «Сибирь» имени Е. И. Борисова</h3>
+  <p>Барнаул, Алтайский край · Барнаул, Алтайский край</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-respubliki-altay-036.html" data-title="государственный оркестр республики алтай" data-city="горно-алтайск, республика алтай" data-region="горно-алтайск, республика алтай">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Государственный оркестр Республики Алтай</h3>
+  <p>Горно-Алтайск, Республика Алтай · Горно-Алтайск, Республика Алтай</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tuvinskiy-nacionalnyy-orkestr-037.html" data-title="тувинский национальный оркестр" data-city="кызыл, республика тыва" data-region="кызыл, республика тыва">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Тувинский национальный оркестр</h3>
+  <p>Кызыл, Республика Тыва · Кызыл, Республика Тыва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-orkestr-respubliki-buryatiya-teatra-baykal-038.html" data-title="национальный оркестр республики бурятия театра «байкал»" data-city="улан-удэ, республика бурятия" data-region="улан-удэ, республика бурятия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Национальный оркестр Республики Бурятия театра «Байкал»</h3>
+  <p>Улан-Удэ, Республика Бурятия · Улан-Удэ, Республика Бурятия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/irkutskiy-russkiy-orkestr-irkutskiy-filarmonicheskiy-russkiy-orkestr-039.html" data-title="иркутский русский оркестр / иркутский филармонический русский оркестр" data-city="иркутск" data-region="иркутск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Иркутский русский оркестр / Иркутский филармонический русский оркестр</h3>
+  <p>Иркутск · Иркутск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kostromskoy-gosudarstvennyy-orkestr-narodnyh-instrumentov-040.html" data-title="костромской государственный оркестр народных инструментов" data-city="кострома" data-region="кострома">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Костромской государственный оркестр народных инструментов</h3>
+  <p>Кострома · Кострома</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-imeni-v-g-babanova-novgorodskoy-oblastnoy-filarmonii-041.html" data-title="оркестр русских народных инструментов имени в. г. бабанова новгородской областной филармонии" data-city="великий новгород" data-region="великий новгород">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов имени В. Г. Бабанова Новгородской областной филармонии</h3>
+  <p>Великий Новгород · Великий Новгород</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-polyaris-042.html" data-title="оркестр русских народных инструментов «полярис»" data-city="мурманск" data-region="мурманск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов «Полярис»</h3>
+  <p>Мурманск · Мурманск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-imeni-v-m-mahova-astrahanskoy-gosudarstvennoy-filarm-043.html" data-title="оркестр русских народных инструментов имени в. м. махова астраханской государственной филармонии" data-city="астрахань" data-region="астрахань">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов имени В. М. Махова Астраханской государственной филармонии</h3>
+  <p>Астрахань · Астрахань</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/russkiy-orkestr-buryatskoy-gosudarstvennoy-filarmonii-044.html" data-title="русский оркестр бурятской государственной филармонии" data-city="улан-удэ, республика бурятия" data-region="улан-удэ, республика бурятия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Русский оркестр Бурятской государственной филармонии</h3>
+  <p>Улан-Удэ, Республика Бурятия · Улан-Удэ, Республика Бурятия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gubernatorskiy-akademicheskiy-orkestr-russkih-narodnyh-instrumentov-vologodskoy-oblastnoy--045.html" data-title="губернаторский академический оркестр русских народных инструментов вологодской областной филармонии" data-city="вологда / череповец" data-region="вологда / череповец">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Губернаторский академический оркестр русских народных инструментов Вологодской областной филармонии</h3>
+  <p>Вологда / Череповец · Вологда / Череповец</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-imeni-v-gridina-kurskoy-gosudarstvennoy-filarmonii-046.html" data-title="оркестр русских народных инструментов имени в. гридина курской государственной филармонии" data-city="курск" data-region="курск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов имени В. Гридина Курской государственной филармонии</h3>
+  <p>Курск · Курск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/smolenskiy-russkiy-narodnyy-orkestr-imeni-v-p-dubrovskogo-047.html" data-title="смоленский русский народный оркестр имени в. п. дубровского" data-city="смоленск" data-region="смоленск">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Смоленский русский народный оркестр имени В. П. Дубровского</h3>
+  <p>Смоленск · Смоленск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/ivanovskiy-orkestr-russkih-narodnyh-instrumentov-ivanovskoy-gosudarstvennoy-filarmonii-048.html" data-title="ивановский оркестр русских народных инструментов ивановской государственной филармонии" data-city="иваново" data-region="иваново">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Ивановский оркестр русских народных инструментов Ивановской государственной филармонии</h3>
+  <p>Иваново · Иваново</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/vyatskiy-orkestr-russkih-narodnyh-instrumentov-imeni-f-i-shalyapina-049.html" data-title="вятский оркестр русских народных инструментов имени ф. и. шаляпина" data-city="киров" data-region="киров">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Вятский оркестр русских народных инструментов имени Ф. И. Шаляпина</h3>
+  <p>Киров · Киров</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-rossiyane-tambovskaya-koncertnaya-organizaciya-050.html" data-title="оркестр русских народных инструментов «россияне» / тамбовская концертная организация" data-city="тамбов" data-region="тамбов">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Оркестр народных инструментов</span>
+  <h3>Оркестр русских народных инструментов «Россияне» / Тамбовская концертная организация</h3>
+  <p>Тамбов · Тамбов</p>
+  <b>Подробнее →</b>
+</a></div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/img/logo.png" alt="">
+    <span>Журавли</span>
+  </div>
+  <p>Культура объединяет. Искусство вдохновляет. Журавли ведут вперёд.</p>
+  <div class="footer-socials">
+    <a href="#">VK</a><a href="#">TG</a><a href="#">YT</a>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@zhuravli-portal.ru">info@zhuravli-portal.ru</a>
+    <a href="contacts.html">Связаться →</a>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

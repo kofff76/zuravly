@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Национальные оркестры — каталог портала Журавли</title>
+  <meta name="description" content="Коллективы, представляющие национальные музыкальные традиции регионов России.">
+  <meta property="og:title" content="Национальные оркестры — каталог портала Журавли">
+  <meta property="og:description" content="Коллективы, представляющие национальные музыкальные традиции регионов России.">
+  <meta property="og:image" content="assets/img/hero-tower-night.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Журавли">
+    <img src="assets/img/logo.png" alt="Журавли">
+    <span><b>Журавли</b><small>Культурный портал</small></span>
+  </a>
+  <nav class="topnav"><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  <button class="search-btn" id="searchOpen" aria-label="Поиск">⌕</button>
+  <button class="burger" id="menuOpen" aria-label="Меню"><span></span><span></span></button>
+</header>
+<aside class="menu-curtains" id="siteMenu" aria-hidden="true">
+  <div class="menu-panel">
+    <button class="menu-close" id="menuClose">Закрыть</button>
+    <p>Культурно-информационный портал</p>
+    <h2>Журавли</h2>
+    <nav><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  </div>
+</aside>
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <button class="menu-close" id="searchClose">Закрыть</button>
+  <div class="search-box">
+    <p>Поиск по каталогу</p>
+    <input id="globalSearch" type="search" placeholder="Введите название коллектива, город или регион">
+    <div id="globalResults"></div>
+  </div>
+</div>
+
+<main>
+
+<section class="hero " style="--hero:url('assets/img/photo-folk-orchestra-red.png')">
+  <img class="birds-layer" src="assets/img/birds-wide.png" alt="" aria-hidden="true">
+  <div class="hero__shade"></div>
+  <div class="hero__content reveal">
+    <p class="kicker">Каталог</p>
+    <h1>Национальные оркестры</h1>
+    <p class="lead">Коллективы, представляющие национальные музыкальные традиции регионов России.</p>
+    <div class="hero-actions"><a class="arrow-link" href="catalog.html">Назад в каталог<span>→</span></a></div>
+  </div>
+</section>
+<section class="section catalog-page">
+  <div class="filter-panel reveal">
+    <label>Поиск в разделе</label>
+    <input id="catalogFilter" type="search" placeholder="Название, город или регион">
+    <span>18 записей</span>
+  </div>
+  <div class="collective-grid" id="collectiveGrid">
+<a class="collective-card reveal" href="collectives/nacionalnyy-akademicheskiy-orkestr-narodnyh-instrumentov-rossii-imeni-n-p-osipova-001.html" data-title="национальный академический оркестр народных инструментов россии имени н. п. осипова" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Национальный академический оркестр народных инструментов России имени Н. П. Осипова</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-russkih-narodnyh-instrumentov-onego-karelskoy-gosudarstvennoy-filarmonii-002.html" data-title="оркестр русских народных инструментов «онего» карельской государственной филармонии" data-city="петрозаводск, республика карелия" data-region="петрозаводск, республика карелия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Оркестр русских народных инструментов «Онего» Карельской государственной филармонии</h3>
+  <p>Петрозаводск, Республика Карелия · Петрозаводск, Республика Карелия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-narodnyh-instrumentov-respubliki-tatarstan-003.html" data-title="государственный оркестр народных инструментов республики татарстан" data-city="казань, республика татарстан" data-region="казань, республика татарстан">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Государственный оркестр народных инструментов Республики Татарстан</h3>
+  <p>Казань, Республика Татарстан · Казань, Республика Татарстан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-orkestr-narodnyh-instrumentov-respubliki-bashkortostan-004.html" data-title="национальный оркестр народных инструментов республики башкортостан" data-city="уфа, республика башкортостан" data-region="уфа, республика башкортостан">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Национальный оркестр народных инструментов Республики Башкортостан</h3>
+  <p>Уфа, Республика Башкортостан · Уфа, Республика Башкортостан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-narodnyh-instrumentov-mariy-kundem-im-s-elembaeva-005.html" data-title="государственный оркестр народных инструментов «марий кундем» им. с. элембаева" data-city="йошкар-ола, республика марий эл" data-region="йошкар-ола, республика марий эл">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Государственный оркестр народных инструментов «Марий кундем» им. С. Элембаева</h3>
+  <p>Йошкар-Ола, Республика Марий Эл · Йошкар-Ола, Республика Марий Эл</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-narodnyh-instrumentov-zolotaya-melodiya-udmurtskoy-gosudarstvennoy-filarmonii-006.html" data-title="оркестр народных инструментов «золотая мелодия» удмуртской государственной филармонии" data-city="ижевск, удмуртская республика" data-region="ижевск, удмуртская республика">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Оркестр народных инструментов «Золотая мелодия» Удмуртской государственной филармонии</h3>
+  <p>Ижевск, Удмуртская Республика · Ижевск, Удмуртская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-russkih-narodnyh-instrumentov-zolotye-struny-filarmonii-yakutii-007.html" data-title="государственный оркестр русских народных инструментов «золотые струны» филармонии якутии" data-city="якутск, республика саха (якутия)" data-region="якутск, республика саха (якутия)">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Государственный оркестр русских народных инструментов «Золотые струны» Филармонии Якутии</h3>
+  <p>Якутск, Республика Саха (Якутия) · Якутск, Республика Саха (Якутия)</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-narodnyh-instrumentov-respubliki-dagestan-008.html" data-title="государственный оркестр народных инструментов республики дагестан" data-city="махачкала, республика дагестан" data-region="махачкала, республика дагестан">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Государственный оркестр народных инструментов Республики Дагестан</h3>
+  <p>Махачкала, Республика Дагестан · Махачкала, Республика Дагестан</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-russkih-narodnyh-instrumentov-russkaya-udal-imeni-a-v-shipitko-009.html" data-title="государственный оркестр русских народных инструментов «русская удаль» имени а. в. шипитько" data-city="майкоп, республика адыгея" data-region="майкоп, республика адыгея">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Государственный оркестр русских народных инструментов «Русская удаль» имени А. В. Шипитько</h3>
+  <p>Майкоп, Республика Адыгея · Майкоп, Республика Адыгея</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-gosudarstvennyy-orkestr-narodnyh-instrumentov-rso-alaniya-imeni-bulata-gazdano-010.html" data-title="национальный государственный оркестр народных инструментов рсо-алания имени булата газданова" data-city="владикавказ, республика северная осетия - алания" data-region="владикавказ, республика северная осетия - алания">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Национальный государственный оркестр народных инструментов РСО-Алания имени Булата Газданова</h3>
+  <p>Владикавказ, Республика Северная Осетия - Алания · Владикавказ, Республика Северная Осетия - Алания</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-chechenskih-narodnyh-instrumentov-chechenskoy-gosudarstvennoy-filarmonii-imeni-a-s-011.html" data-title="оркестр чеченских народных инструментов чеченской государственной филармонии имени а. шахбулатова" data-city="грозный, чеченская республика" data-region="грозный, чеченская республика">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Оркестр чеченских народных инструментов Чеченской государственной филармонии имени А. Шахбулатова</h3>
+  <p>Грозный, Чеченская Республика · Грозный, Чеченская Республика</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orkestr-narodnyh-instrumentov-gosudarstvennoy-filarmonii-imeni-a-hamhoeva-012.html" data-title="оркестр народных инструментов государственной филармонии имени а. хамхоева" data-city="республика ингушетия" data-region="республика ингушетия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Оркестр народных инструментов Государственной филармонии имени А. Хамхоева</h3>
+  <p>Республика Ингушетия · Республика Ингушетия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-orkestr-kalmykii-013.html" data-title="национальный оркестр калмыкии" data-city="элиста, республика калмыкия" data-region="элиста, республика калмыкия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Национальный оркестр Калмыкии</h3>
+  <p>Элиста, Республика Калмыкия · Элиста, Республика Калмыкия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-art-folk-orkestr-mordens-mordovskoy-gosudarstvennoy-filarmonii-014.html" data-title="национальный арт-фолк оркестр «морденс» мордовской государственной филармонии" data-city="саранск, республика мордовия" data-region="саранск, республика мордовия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Национальный арт-фолк оркестр «Морденс» Мордовской государственной филармонии</h3>
+  <p>Саранск, Республика Мордовия · Саранск, Республика Мордовия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-orkestr-respubliki-altay-015.html" data-title="государственный оркестр республики алтай" data-city="горно-алтайск, республика алтай" data-region="горно-алтайск, республика алтай">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Государственный оркестр Республики Алтай</h3>
+  <p>Горно-Алтайск, Республика Алтай · Горно-Алтайск, Республика Алтай</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tuvinskiy-nacionalnyy-orkestr-016.html" data-title="тувинский национальный оркестр" data-city="кызыл, республика тыва" data-region="кызыл, республика тыва">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Тувинский национальный оркестр</h3>
+  <p>Кызыл, Республика Тыва · Кызыл, Республика Тыва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-orkestr-respubliki-buryatiya-teatra-baykal-017.html" data-title="национальный оркестр республики бурятия театра «байкал»" data-city="улан-удэ, республика бурятия" data-region="улан-удэ, республика бурятия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Национальный оркестр Республики Бурятия театра «Байкал»</h3>
+  <p>Улан-Удэ, Республика Бурятия · Улан-Удэ, Республика Бурятия</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/russkiy-orkestr-buryatskoy-gosudarstvennoy-filarmonii-018.html" data-title="русский оркестр бурятской государственной филармонии" data-city="улан-удэ, республика бурятия" data-region="улан-удэ, республика бурятия">
+  <img src="assets/img/photo-folk-orchestra-red.png" alt="">
+  <span>Национальный оркестр</span>
+  <h3>Русский оркестр Бурятской государственной филармонии</h3>
+  <p>Улан-Удэ, Республика Бурятия · Улан-Удэ, Республика Бурятия</p>
+  <b>Подробнее →</b>
+</a></div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/img/logo.png" alt="">
+    <span>Журавли</span>
+  </div>
+  <p>Культура объединяет. Искусство вдохновляет. Журавли ведут вперёд.</p>
+  <div class="footer-socials">
+    <a href="#">VK</a><a href="#">TG</a><a href="#">YT</a>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@zhuravli-portal.ru">info@zhuravli-portal.ru</a>
+    <a href="contacts.html">Связаться →</a>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

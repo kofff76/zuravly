@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Симфонические оркестры — каталог портала Журавли</title>
+  <meta name="description" content="Академические оркестры России, концертные организации и коллективы симфонической традиции.">
+  <meta property="og:title" content="Симфонические оркестры — каталог портала Журавли">
+  <meta property="og:description" content="Академические оркестры России, концертные организации и коллективы симфонической традиции.">
+  <meta property="og:image" content="assets/img/hero-tower-night.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Журавли">
+    <img src="assets/img/logo.png" alt="Журавли">
+    <span><b>Журавли</b><small>Культурный портал</small></span>
+  </a>
+  <nav class="topnav"><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  <button class="search-btn" id="searchOpen" aria-label="Поиск">⌕</button>
+  <button class="burger" id="menuOpen" aria-label="Меню"><span></span><span></span></button>
+</header>
+<aside class="menu-curtains" id="siteMenu" aria-hidden="true">
+  <div class="menu-panel">
+    <button class="menu-close" id="menuClose">Закрыть</button>
+    <p>Культурно-информационный портал</p>
+    <h2>Журавли</h2>
+    <nav><a class="" href="index.html">Главная</a>
+<a class="is-active" href="catalog.html">Каталог</a>
+<a class="" href="events.html">События</a>
+<a class="" href="news.html">Новости</a>
+<a class="" href="media.html">Медиа</a>
+<a class="" href="about.html">О проекте</a>
+<a class="" href="contacts.html">Контакты</a></nav>
+  </div>
+</aside>
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <button class="menu-close" id="searchClose">Закрыть</button>
+  <div class="search-box">
+    <p>Поиск по каталогу</p>
+    <input id="globalSearch" type="search" placeholder="Введите название коллектива, город или регион">
+    <div id="globalResults"></div>
+  </div>
+</div>
+
+<main>
+
+<section class="hero " style="--hero:url('assets/img/photo-symphony-top.png')">
+  <img class="birds-layer" src="assets/img/birds-wide.png" alt="" aria-hidden="true">
+  <div class="hero__shade"></div>
+  <div class="hero__content reveal">
+    <p class="kicker">Каталог</p>
+    <h1>Симфонические оркестры</h1>
+    <p class="lead">Академические оркестры России, концертные организации и коллективы симфонической традиции.</p>
+    <div class="hero-actions"><a class="arrow-link" href="catalog.html">Назад в каталог<span>→</span></a></div>
+  </div>
+</section>
+<section class="section catalog-page">
+  <div class="filter-panel reveal">
+    <label>Поиск в разделе</label>
+    <input id="catalogFilter" type="search" placeholder="Название, город или регион">
+    <span>55 записей</span>
+  </div>
+  <div class="collective-grid" id="collectiveGrid">
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-akademicheskiy-simfonicheskiy-orkestr-rossii-im-e-f-svetlanova-001.html" data-title="государственный академический симфонический оркестр россии им. е. ф. светланова" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный академический симфонический оркестр России им. Е. Ф. Светланова</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-akademicheskiy-bolshoy-simfonicheskiy-orkestr-im-p-i-chaykovskogo-002.html" data-title="государственный академический большой симфонический оркестр им. п. и. чайковского" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный академический Большой симфонический оркестр им. П. И. Чайковского</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/rossiyskiy-nacionalnyy-orkestr-003.html" data-title="российский национальный оркестр" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Российский национальный оркестр</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-filarmonicheskiy-orkestr-rossii-004.html" data-title="национальный филармонический оркестр россии" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Национальный филармонический оркестр России</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/akademicheskiy-simfonicheskiy-orkestr-moskovskoy-filarmonii-005.html" data-title="академический симфонический оркестр московской филармонии" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Академический симфонический оркестр Московской филармонии</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/moskovskiy-gosudarstvennyy-akademicheskiy-simfonicheskiy-orkestr-006.html" data-title="московский государственный академический симфонический оркестр" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Московский государственный академический симфонический оркестр</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/moskovskiy-gosudarstvennyy-simfonicheskiy-orkestr-007.html" data-title="московский государственный симфонический оркестр" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Московский государственный симфонический оркестр</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennaya-akademicheskaya-simfonicheskaya-kapella-rossii-008.html" data-title="государственная академическая симфоническая капелла россии" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственная академическая симфоническая капелла России</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-simfonicheskiy-orkestr-novaya-rossiya-009.html" data-title="государственный симфонический оркестр «новая россия»" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный симфонический оркестр «Новая Россия»</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/simfonicheskiy-orkestr-moskvy-russkaya-filarmoniya-010.html" data-title="симфонический оркестр москвы «русская филармония»" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Симфонический оркестр Москвы «Русская филармония»</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-kremlevskiy-orkestr-011.html" data-title="государственный кремлёвский оркестр" data-city="москва" data-region="москва">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный Кремлёвский оркестр</h3>
+  <p>Москва · Москва</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/zasluzhennyy-kollektiv-rossii-akademicheskiy-simfonicheskiy-orkestr-sankt-peterburgskoy-fi-012.html" data-title="заслуженный коллектив россии академический симфонический оркестр санкт-петербургской филармонии" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Заслуженный коллектив России академический симфонический оркестр Санкт-Петербургской филармонии</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/akademicheskiy-simfonicheskiy-orkestr-sankt-peterburgskoy-filarmonii-013.html" data-title="академический симфонический оркестр санкт-петербургской филармонии" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Академический симфонический оркестр Санкт-Петербургской филармонии</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/sankt-peterburgskiy-gosudarstvennyy-akademicheskiy-simfonicheskiy-orkestr-014.html" data-title="санкт-петербургский государственный академический симфонический оркестр" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Санкт-Петербургский государственный академический симфонический оркестр</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/sankt-peterburgskiy-gosudarstvennyy-simfonicheskiy-orkestr-klassika-015.html" data-title="санкт-петербургский государственный симфонический оркестр «классика»" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Санкт-Петербургский государственный симфонический оркестр «Классика»</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gubernatorskiy-simfonicheskiy-orkestr-sankt-peterburga-016.html" data-title="губернаторский симфонический оркестр санкт-петербурга" data-city="санкт-петербург" data-region="санкт-петербург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Губернаторский симфонический оркестр Санкт-Петербурга</h3>
+  <p>Санкт-Петербург · Санкт-Петербург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-simfonicheskiy-orkestr-leningradskoy-oblasti-017.html" data-title="государственный симфонический оркестр ленинградской области" data-city="ленинградская область" data-region="ленинградская область">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный симфонический оркестр Ленинградской области</h3>
+  <p>Ленинградская область · Ленинградская область</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/simfonicheskiy-orkestr-karelskoy-gosudarstvennoy-filarmonii-018.html" data-title="симфонический оркестр карельской государственной филармонии" data-city="петрозаводск" data-region="петрозаводск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Симфонический оркестр Карельской государственной филармонии</h3>
+  <p>Петрозаводск · Петрозаводск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/murmanskiy-filarmonicheskiy-orkestr-019.html" data-title="мурманский филармонический оркестр" data-city="мурманск" data-region="мурманск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Мурманский филармонический оркестр</h3>
+  <p>Мурманск · Мурманск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kaliningradskiy-simfonicheskiy-orkestr-020.html" data-title="калининградский симфонический оркестр" data-city="калининград" data-region="калининград">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Калининградский симфонический оркестр</h3>
+  <p>Калининград · Калининград</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/novosibirskiy-akademicheskiy-simfonicheskiy-orkestr-021.html" data-title="новосибирский академический симфонический оркестр" data-city="новосибирск" data-region="новосибирск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Новосибирский академический симфонический оркестр</h3>
+  <p>Новосибирск · Новосибирск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/uralskiy-akademicheskiy-filarmonicheskiy-orkestr-022.html" data-title="уральский академический филармонический оркестр" data-city="екатеринбург" data-region="екатеринбург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Уральский академический филармонический оркестр</h3>
+  <p>Екатеринбург · Екатеринбург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-akademicheskiy-simfonicheskiy-orkestr-respubliki-tatarstan-023.html" data-title="государственный академический симфонический оркестр республики татарстан" data-city="казань" data-region="казань">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный академический симфонический оркестр Республики Татарстан</h3>
+  <p>Казань · Казань</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nacionalnyy-simfonicheskiy-orkestr-respubliki-bashkortostan-024.html" data-title="национальный симфонический оркестр республики башкортостан" data-city="уфа" data-region="уфа">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Национальный симфонический оркестр Республики Башкортостан</h3>
+  <p>Уфа · Уфа</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/krasnoyarskiy-akademicheskiy-simfonicheskiy-orkestr-025.html" data-title="красноярский академический симфонический оркестр" data-city="красноярск" data-region="красноярск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Красноярский академический симфонический оркестр</h3>
+  <p>Красноярск · Красноярск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/omskiy-akademicheskiy-simfonicheskiy-orkestr-026.html" data-title="омский академический симфонический оркестр" data-city="омск" data-region="омск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Омский академический симфонический оркестр</h3>
+  <p>Омск · Омск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tomskiy-akademicheskiy-simfonicheskiy-orkestr-027.html" data-title="томский академический симфонический оркестр" data-city="томск" data-region="томск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Томский академический симфонический оркестр</h3>
+  <p>Томск · Томск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gubernatorskiy-simfonicheskiy-orkestr-kuzbassa-028.html" data-title="губернаторский симфонический оркестр кузбасса" data-city="кемерово" data-region="кемерово">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Губернаторский симфонический оркестр Кузбасса</h3>
+  <p>Кемерово · Кемерово</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/irkutskiy-gubernatorskiy-simfonicheskiy-orkestr-029.html" data-title="иркутский губернаторский симфонический оркестр" data-city="иркутск" data-region="иркутск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Иркутский губернаторский симфонический оркестр</h3>
+  <p>Иркутск · Иркутск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gosudarstvennyy-koncertnyy-orkestr-yakutii-symphonica-artica-030.html" data-title="государственный концертный оркестр якутии symphonica artica" data-city="якутск" data-region="якутск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Государственный концертный оркестр Якутии Symphonica ARTica</h3>
+  <p>Якутск · Якутск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tihookeanskiy-simfonicheskiy-orkestr-031.html" data-title="тихоокеанский симфонический оркестр" data-city="владивосток" data-region="владивосток">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Тихоокеанский симфонический оркестр</h3>
+  <p>Владивосток · Владивосток</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/dalnevostochnyy-akademicheskiy-simfonicheskiy-orkestr-032.html" data-title="дальневосточный академический симфонический оркестр" data-city="хабаровск" data-region="хабаровск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Дальневосточный академический симфонический оркестр</h3>
+  <p>Хабаровск · Хабаровск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tyumenskiy-filarmonicheskiy-orkestr-033.html" data-title="тюменский филармонический оркестр" data-city="тюмень" data-region="тюмень">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Тюменский филармонический оркестр</h3>
+  <p>Тюмень · Тюмень</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/chelyabinskiy-gosudarstvennyy-simfonicheskiy-orkestr-034.html" data-title="челябинский государственный симфонический оркестр" data-city="челябинск" data-region="челябинск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Челябинский государственный симфонический оркестр</h3>
+  <p>Челябинск · Челябинск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/orenburgskiy-gosudarstvennyy-simfonicheskiy-orkestr-035.html" data-title="оренбургский государственный симфонический оркестр" data-city="оренбург" data-region="оренбург">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Оренбургский государственный симфонический оркестр</h3>
+  <p>Оренбург · Оренбург</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/yaroslavskiy-akademicheskiy-gubernatorskiy-simfonicheskiy-orkestr-036.html" data-title="ярославский академический губернаторский симфонический оркестр" data-city="ярославль" data-region="ярославль">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Ярославский академический губернаторский симфонический оркестр</h3>
+  <p>Ярославль · Ярославль</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/nizhegorodskiy-filarmonicheskiy-simfonicheskiy-orkestr-037.html" data-title="нижегородский филармонический симфонический оркестр" data-city="нижний новгород" data-region="нижний новгород">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Нижегородский филармонический симфонический оркестр</h3>
+  <p>Нижний Новгород · Нижний Новгород</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/samarskiy-akademicheskiy-simfonicheskiy-orkestr-038.html" data-title="самарский академический симфонический оркестр" data-city="самара" data-region="самара">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Самарский академический симфонический оркестр</h3>
+  <p>Самара · Самара</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/saratovskiy-akademicheskiy-simfonicheskiy-orkestr-039.html" data-title="саратовский академический симфонический оркестр" data-city="саратов" data-region="саратов">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Саратовский академический симфонический оркестр</h3>
+  <p>Саратов · Саратов</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/ulyanovskiy-gosudarstvennyy-akademicheskiy-simfonicheskiy-orkestr-gubernatorskiy-040.html" data-title="ульяновский государственный академический симфонический оркестр «губернаторский»" data-city="ульяновск" data-region="ульяновск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Ульяновский государственный академический симфонический оркестр «Губернаторский»</h3>
+  <p>Ульяновск · Ульяновск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/gubernatorskaya-simfonicheskaya-kapella-penzenskoy-oblasti-041.html" data-title="губернаторская симфоническая капелла пензенской области" data-city="пенза" data-region="пенза">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Губернаторская симфоническая капелла Пензенской области</h3>
+  <p>Пенза · Пенза</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/akademicheskiy-simfonicheskiy-orkestr-voronezhskogo-koncertnogo-zala-042.html" data-title="академический симфонический оркестр воронежского концертного зала" data-city="воронеж" data-region="воронеж">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Академический симфонический оркестр Воронежского концертного зала</h3>
+  <p>Воронеж · Воронеж</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/rostovskiy-akademicheskiy-simfonicheskiy-orkestr-043.html" data-title="ростовский академический симфонический оркестр" data-city="ростов-на-дону" data-region="ростов-на-дону">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Ростовский академический симфонический оркестр</h3>
+  <p>Ростов-на-Дону · Ростов-на-Дону</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/volgogradskiy-akademicheskiy-simfonicheskiy-orkestr-044.html" data-title="волгоградский академический симфонический оркестр" data-city="волгоград" data-region="волгоград">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Волгоградский академический симфонический оркестр</h3>
+  <p>Волгоград · Волгоград</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/belgorodskiy-simfonicheskiy-orkestr-045.html" data-title="белгородский симфонический оркестр" data-city="белгород" data-region="белгород">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Белгородский симфонический оркестр</h3>
+  <p>Белгород · Белгород</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/tulskiy-filarmonicheskiy-simfonicheskiy-orkestr-046.html" data-title="тульский филармонический симфонический оркестр" data-city="тула" data-region="тула">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Тульский филармонический симфонический оркестр</h3>
+  <p>Тула · Тула</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/ryazanskiy-gubernatorskiy-simfonicheskiy-orkestr-047.html" data-title="рязанский губернаторский симфонический оркестр" data-city="рязань" data-region="рязань">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Рязанский губернаторский симфонический оркестр</h3>
+  <p>Рязань · Рязань</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/vladimirskiy-gubernatorskiy-simfonicheskiy-orkestr-048.html" data-title="владимирский губернаторский симфонический оркестр" data-city="владимир" data-region="владимир">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Владимирский губернаторский симфонический оркестр</h3>
+  <p>Владимир · Владимир</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/lipeckiy-simfonicheskiy-orkestr-049.html" data-title="липецкий симфонический оркестр" data-city="липецк" data-region="липецк">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Липецкий симфонический оркестр</h3>
+  <p>Липецк · Липецк</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/bryanskiy-gubernatorskiy-simfonicheskiy-orkestr-050.html" data-title="брянский губернаторский симфонический оркестр" data-city="брянск" data-region="брянск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Брянский губернаторский симфонический оркестр</h3>
+  <p>Брянск · Брянск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kurskiy-simfonicheskiy-orkestr-051.html" data-title="курский симфонический оркестр" data-city="курск" data-region="курск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Курский симфонический оркестр</h3>
+  <p>Курск · Курск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/akademicheskiy-simfonicheskiy-orkestr-severo-kavkazskoy-gosudarstvennoy-filarmonii-im-v-i--052.html" data-title="академический симфонический оркестр северо-кавказской государственной филармонии им. в. и. сафонова" data-city="кисловодск" data-region="кисловодск">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Академический симфонический оркестр Северо-Кавказской государственной филармонии им. В. И. Сафонова</h3>
+  <p>Кисловодск · Кисловодск</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/stavropolskiy-gosudarstvennyy-simfonicheskiy-orkestr-053.html" data-title="ставропольский государственный симфонический оркестр" data-city="ставрополь" data-region="ставрополь">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Ставропольский государственный симфонический оркестр</h3>
+  <p>Ставрополь · Ставрополь</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/kubanskiy-simfonicheskiy-orkestr-054.html" data-title="кубанский симфонический оркестр" data-city="краснодар" data-region="краснодар">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Кубанский симфонический оркестр</h3>
+  <p>Краснодар · Краснодар</p>
+  <b>Подробнее →</b>
+</a>
+<a class="collective-card reveal" href="collectives/sochinskiy-simfonicheskiy-orkestr-055.html" data-title="сочинский симфонический оркестр" data-city="сочи" data-region="сочи">
+  <img src="assets/img/photo-symphony-top.png" alt="">
+  <span>Симфонический оркестр</span>
+  <h3>Сочинский симфонический оркестр</h3>
+  <p>Сочи · Сочи</p>
+  <b>Подробнее →</b>
+</a></div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/img/logo.png" alt="">
+    <span>Журавли</span>
+  </div>
+  <p>Культура объединяет. Искусство вдохновляет. Журавли ведут вперёд.</p>
+  <div class="footer-socials">
+    <a href="#">VK</a><a href="#">TG</a><a href="#">YT</a>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@zhuravli-portal.ru">info@zhuravli-portal.ru</a>
+    <a href="contacts.html">Связаться →</a>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
